@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Anish | CNN Project</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.5.min.css" rel="stylesheet">
+  <link href="https://cdn.pydata.org/bokeh/release/bokeh-widgets-0.12.0.min.css" rel="stylesheet">
+  <style>
+  .fakeimg {
+    height: 200px;
+    background: #aaa;
+  }
+  </style>
+</head>
+<body>
+
+<div class="jumbotron text-center" style="margin-bottom:0">
+  <h1>Flower Prediction Using CNN</h1>
+  <p>Anish Batra | ab8166@nyu.edu</p> 
+</div>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="https://anishbatra7.github.io">Back to main site</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+  <div class="row">
+  <div class="col-md-12">
+    <h1>Daisy, Rose, or Sunflower? Let's find out!</h1>
+  <h2>Upload a flower image</h2>
+    <br>
+    
+<form action="" method=post enctype=multipart/form-data>
+<div class="form-group">
+<input type="file" class="form-control" name= file size=13>
+</div>
+<button type="submit" class="btn btn-default" size = 13>Upload</button>
+</form>
+
+    <br>
+    <h2>Results</h2>
+    <br>
+    <div class="panel panel-default">
+    <table class="table" id="results-table" style="text-align:center;vertical-align:middle">
+        <tr style="text-align:center;vertical-align:middle">
+          <th style="text-align:center;vertical-align:middle">Image</th>
+          <th style="text-align:center;vertical-align:middle">Prediction</th>
+        </tr>
+    <tr>
+          {% block content %}{% endblock %}
+        </tr>
+    </table>
+  </div>
+  </div>
+  </div>
+</div>
+
+<div class="jumbotron text-center" style="margin-bottom:0">
+  <p>Email: ab8166@nyu.edu</p>
+</div>
+
+</body>
+</html>
+

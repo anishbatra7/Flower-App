@@ -1,0 +1,14 @@
+{% extends "index.html" %}
+{% block content %}   
+<th style="text-align:center;vertical-align:middle">
+<img width="400px" height="250px" src="{{imagesource}}"/>
+</th>
+<div align="center">
+<th style="text-align:center;vertical-align:middle">
+{{ plot_div|safe }}
+<script src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.5.min.js"></script>
+<script src="https://cdn.pydata.org/bokeh/release/bokeh-widgets-0.12.5.min.js"></script>
+{{ plot_script|safe }}
+</th>
+</div>
+{% endblock %}
